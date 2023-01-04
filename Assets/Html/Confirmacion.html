@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmar selecci&oacute;n</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
+        crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 offset-3">
+
+
+                <nav style="--bs-breadcrumb-divider: '=>';" aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="../Html/index.html">Datos personales</a></li>
+                        <li class="breadcrumb-item"><a id="select_subject" href="#">Seleccionar asignatura</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Confirmación</li>
+                    </ol>
+                </nav>
+
+                <div class="card">
+                    <!-- estructura de la carta-->
+                    <div class="card-header bg-success text-bg-danger">
+                        <!--Cabecera de la carta-->
+                        <h4 class="text-center">Confimar selecci&oacute;n</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <!--Cuerpo de la carta-->
+
+                        <div class="card-title">
+                            <!--titulo de la carta-->
+                        </div>
+                        <ul class="list-group">
+                            <li class="list-group-item active text-center" aria-current="true">Datos básicos</li>
+                            <li class="list-group-item item-base">Nombre:</li>
+                            <li class="list-group-item item-base">Provincia:</li>
+                            <li class="list-group-item item-base">Ciudad:</li>
+                            <li class="list-group-item item-base">Sector:</li>
+                            <li class="list-group-item item-base">Calle:</li>
+                            <li class="list-group-item item-base">Carrera:</li>
+                        </ul>
+
+                        <table class="table table-dark table-striped">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Asignatura</th>
+                                    <th scope="col">Lu</th>
+                                    <th scope="col">Ma</th>
+                                    <th scope="col">Mie</th>
+                                    <th scope="col">Jue</th>
+                                    <th scope="col">Vi</th>
+                                    <th scope="col">Sa</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                    <div class="card-footer">
+                        <button type="button" class="btn btn-success float-end" onclick="confirmarSeleccion()">Confirmar
+                            selecci&oacute;n</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../Js/index.js"></script>
+</body>
+
+</html>

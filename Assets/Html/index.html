@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../Css/index.css">
+    
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+
+    <title>Sistema de inscripci&oacute;n</title>
+</head>
+
+<body onload="restoreCache()">
+
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-6 offset-3">
+                <div class="card">
+                    <!-- estructura de la carta-->
+                    <div class="card-header bg-dark text-bg-danger">
+                        <!--Cabecera de la carta-->
+                        <h4 class="text-center">Datos personales</h4>
+                    </div>
+
+                    <div class="card-body">
+                        <!--Cuerpo de la carta-->
+
+                        <div class="card-title">
+                            <h4 class="text-center">Complete toda la informaci&oacute;n</h4>
+                            <!--titulo de la carta-->
+                        </div>
+
+                        <!--Formulario-->
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label">Nombre</label>
+                            <input type="text" class="form-control" id="name" name="name">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="provincia" class="form-label">Provincia</label>
+                            <input type="text" class="form-control" id="providence" name="providence">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="ciudad" class="form-label">Ciudad</label>
+                            <input type="text" class="form-control" id="city" name="city">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="sector" class="form-label">Sector</label>
+                            <input type="text" class="form-control" id="area" name="area">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="calle" class="form-label">Calle</label>
+                            <input type="text" class="form-control" id="street" name="street">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="carrera" class="form-label">Carrera</label>
+                            <select id="tipoCarrera" class="form-select" name="tipoCarrera">
+                                <option value="" selected>Seleccione una opci&oacute;n</option>
+                                <option value="Software">Tecnolog&iacute;a en Desarrollo de Software</option>
+                                <option value="Ciberseguridad">Tecnolog&iacute;a en Seguridad Inform&aacute;tica
+                                </option>
+                                <option value="Redes">Tecnolog&iacute;a en Redes de la Informaci&oacute;n</option>
+                                <option value="Multimedia">Tecnolog&iacute;a en Multimedia</option>
+                                <option value="Mecatronica">Tecnolog&iacute;a en Mecatr&oacute;nica</option>
+                            </select>
+                        </div>
+                        <div class="card-footer">
+                            <div class="centrar">
+                                <button onclick="nextForm()" type="button" class="btn btn-success">Guardar</button>
+                                <button onclick="limpiarCampos()" type="button" class="btn btn-danger">Limpiar
+                                    campos</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="../Js/index.js"></script>
+</body>
+
+</html>
